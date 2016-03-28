@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
 html body {
-	font-family: 'Helvetica', Arial, sans-serif;
-	color: #111
+	font-family: 'Roboto', sans-serif;
+	color: #111;
 	background: #E7E7E7;
 }
 
@@ -9,7 +11,7 @@ a {
 }
 
 .content {
-	text-align: center
+	text-align: center;
 	padding: 0 15% 20px;
 }
 
@@ -17,40 +19,106 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 20px 0;
+}
 
-
-content form {
+.content .form1 {
 	padding: 10px;
 	width: 300px;
 	margin: 0 auto;
+	background: #93aedd;
 }
 
-.content form input {
+.content .form1 input {
 	width: 100%;
-	// border: 2px solid #107394;
-	color: #107394;
+    border: 2px solid #107394;
+	color: #ff2d26;
 	background: transparent;
-	magrin-bottom: 15px;
-}
-
-.content div {
-	margin-bottom: 25px;
-	padding: 10px;
-	width: 100%;
-}
-
-.click {
-	background: #ADD8E6;
-}
-
-.mouse-over {
-	background: #CF6E0E;
-}
-
-.submit {
-	background: #43AC6A;
+	margin-bottom: 15px;
 }
 
 .timeout {
-	background: #CCCCCC;
+	display: none;
+}
+
+.click {
+	background: #e88e34;
+}
+
+.mouse-over {
+	background: #68c788;
+	border-style: dashed;
+	border-color: #396648;
+}
+
+.section-2 {
+	background: #f5f3c4;
+}
+
+button {
+	display: inline-block;
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+/* red button */
+
+button:last-of-type {
+	background-color: #E48681;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+}
+
+button:last-of-type:hover {
+	background-color: #DA4F49;
+	border-color: rgba(0,0,0,0.5);
+}
+
+button:last-of-type:active {
+	background-color: #B32C24;
+	border-color: rgba(0,0,0,0.9);
+}
+
+/* blue button */
+
+button:first-of-type {
+	background-color: #699DB6;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+}
+
+button:first-of-type:hover {
+	background-color: #4F87A2;
+	border-color: rgba(0,0,0,0.5);
+}
+
+button:first-of-type:active {
+	background-color: #3C677B;
+	border-color: rgba(0,0,0,0.9);
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #f56c6c;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #f56c6c;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #f56c6c;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #f56c6c;
 }
